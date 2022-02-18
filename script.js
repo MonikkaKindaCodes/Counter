@@ -5,15 +5,17 @@ let count = 0;
 
 function increment() {
   count += 1;
-  countEl.innerText = count;
+  countEl.textContent = count;
 }
 
 function decrement() {
   count -= 1;
-  countEl.innerText = count;
+  countEl.textContent = count;
 }
 
 function save() {
   let entry = count + " - ";
-  saveEl.innerText += entry;
+  saveEl.textContent += entry;
+  countEl.textContent = 0;
+  count = 0;
 }
